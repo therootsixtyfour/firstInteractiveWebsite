@@ -4,13 +4,23 @@
   --black: #000000;
 }
 
-body {
-  background: var(--bg);
-  color: var(--fontColor);
-  font-family: monospace;
+.light-theme {
+  --background: var(--green);
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontColor: var(--white);
+}
+.dark-theme {
+  --background: var(--black);
+  --fontColor: var(--green);
+  --btnBg: var(--white);
+  --btnFontColor: var(--black);
 }
 
-ul {
+body {
+  background: var(--background);
+  color: var(--fontColor);
+  font-family: monospace;
 }
 
 li {
@@ -19,19 +29,6 @@ li {
 
 .list {
   list-style: square;
-}
-
-.light-theme {
-  --bg: var(--green);
-  --fontColor: var(--black);
-  --btnBg: var(--black);
-  --btnFontColor: var(--white);
-}
-.dark-theme {
-  --bg: var(--black);
-  --fontColor: var(--green);
-  --btnBg: var(--white);
-  --btnFontColor: var(--black);
 }
 
 .btn {
