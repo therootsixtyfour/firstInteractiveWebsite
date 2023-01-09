@@ -2,6 +2,8 @@
   --green: #00FF00;
   --white: #FFFFFF;
   --black: #000000;
+  --darkcloud: url("media/darkcloud.png");
+  --lightcloud: url("media/lightcloud.jpeg");
 }
 
 .light-theme {
@@ -9,12 +11,14 @@
   --fontColor: var(--black);
   --btnBg: var(--black);
   --btnFontColor: var(--white);
+  --cloud: var(--lightcloud);
 }
 .dark-theme {
   --background: var(--black);
   --fontColor: var(--green);
   --btnBg: var(--white);
   --btnFontColor: var(--black);
+  --cloud: var(--darkcloud);
 }
 
 body {
@@ -43,4 +47,8 @@ li {
   border: none;
   color: var(--btnFontColor);
   background-color: var(--btnBg);
+}
+
+#cloud {
+  content: var(--cloud);
 }
